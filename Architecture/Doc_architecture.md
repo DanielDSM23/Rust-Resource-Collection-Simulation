@@ -4,7 +4,7 @@ Ce document décrit l'architecture technique du projet de simulation de robots a
 
 ## Diagramme d'Architecture
 
-http://googleusercontent.com/image_generation_content/0
+![Alt text](https://raw.githubusercontent.com/DanielDSM23/Rust-Resource-Collection-Simulation/refs/heads/main/Architecture/images/diagram.png "diragram")
 
 ---
 
