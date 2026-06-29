@@ -22,7 +22,6 @@ pub fn next_step_toward(
 
     while let Some(current) = queue.pop_front() {
         if current == goal {
-            // Reconstruct path back to the first step
             let mut step = goal;
             while came_from[&step] != from {
                 step = came_from[&step];
