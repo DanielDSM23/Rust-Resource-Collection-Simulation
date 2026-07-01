@@ -1,5 +1,5 @@
 use noise::{NoiseFn, Perlin};
-use rand::{Rng, thread_rng};
+use rand::{Rng};
 
 use super::tile::{ResourceKind, Tile};
 
@@ -14,7 +14,7 @@ impl GameMap {
     /// Generate a new map using Perlin noise for obstacles and random resource placement.
     pub fn generate(width: usize, height: usize) -> Self {
         let mut rng = rand::thread_rng();
-        let perlin = Perlin::new();
+        let perlin = Perlin::new(rng.r#gen());
 
         let base_pos = (width / 2, height / 2);
 

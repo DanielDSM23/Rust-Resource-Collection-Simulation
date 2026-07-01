@@ -1,4 +1,11 @@
 mod app;
+mod base;
+mod map;
+mod messages;
+mod simulation;
+mod robots;
+mod ui;
+
 use app::App;
 
 fn main() -> anyhow::Result<()> {
